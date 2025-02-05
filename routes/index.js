@@ -1,5 +1,6 @@
 var express = require('express');
 var router = express.Router();
+var fs = require('fs').promises
 var bdd = require('../models/connection')
 var Cart = require('../models/cart')
 
@@ -77,6 +78,31 @@ router.put('/carts', async (req, res) => {
 			error: "Erreur : " + e.message
 		})
 	}
+})
+
+
+
+
+// Récupères les itineraires en fonction du formulaire de recherche
+router.get('/trips/:departure/:arrival', async (req, res) => {
+
+	const data = await fs.readFile('./models/trips.json', 'utf8')
+	const trips = JSON.parse(data)
+
+	const validTrips = []
+
+	trips.forEach(trip => {
+		if(trip.departure === req.params.departure && trip.arrival === req.params.arrival) {
+			validTrips.push({
+				departure: trip.departure,
+				arrival: trip.arrival,
+				dateDeparture: trip.date.$date,
+				price: trip.price
+			})
+		}
+	})
+
+	res.json(validTrips)
 })
 
 module.exports = router;
