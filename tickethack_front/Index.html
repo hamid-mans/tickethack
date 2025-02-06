@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tickethack - Recherche</title>
+    <link rel="stylesheet" href="CSS/Commun.css">
+    <link rel="stylesheet" href="CSS/Index.css">
+    <link rel="stylesheet" href="CSS/Booking.css">
+    <link rel="stylesheet" href="CSS/Cart.css">
+</head>
+
+<header>
+    <a href="Index.html"><img class="Logo" src="IMG/Logo.png"></a>
+    <li>
+        <a href="Cart.html">Cart</a>
+        <a href="Booking.html">Booking</a>
+    </li>
+</header>
+
+<body>
+
+<div class="containerIndex">
+
+    <h1 class="Titre">Rechercher un trajet</h1>
+
+    <div class="row">
+        <form id="search-form" align="center">
+            <input type="text" id="departure" placeholder="Départ" required>
+            <input type="text" id="arrival" placeholder="Arrivée" required>
+            <input type="date" id="date" required>
+            <button type="submit">Rechercher</button>
+        </form>
+
+        <div id="results"></div>
+    </div>
+
+
+</div>
+
+
+
+<script src="js/generateTrips.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,48 @@
+.containerIndex {
+    height: 90vh;
+    background-image: url("../IMG/fond.jpg");
+    background-size: 100%;
+}
+
+#search-form {
+    margin-top: 20vh;
+    margin-left: 22vw;
+    padding: 2vw;
+    width: 20vw;
+    background-color: #0C131F;
+}
+
+#search-form input {
+    margin-top: 2vh;
+    height: 3vh;
+    width: 15vw;
+    font-family: Arial;
+}
+
+#search-form input:read-write {
+   padding-left: 1vw;
+}
+
+#search-form button {
+    margin-top: 2vh;
+    width: 10vw;
+    cursor: pointer;
+    padding: 0.5vw;
+    background-color: #25324f;
+    color: aliceblue;
+    font-family: Arial;
+    border: none;
+    border-radius: 10px;
+}
+
+#search-form button:hover {
+    background-color: #be7535;
+}
+
+#results {
+    margin-top: 20vh;
+    margin-left: 10vw;
+    height: 30vh;
+    width: 24vw;
+    background-color: #0C131F;
+}

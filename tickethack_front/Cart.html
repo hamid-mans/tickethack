@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tickethack - Panier</title>
+  <link rel="stylesheet" href="CSS/Commun.css">
+  <link rel="stylesheet" href="CSS/Index.css">
+  <link rel="stylesheet" href="CSS/Booking.css">
+  <link rel="stylesheet" href="CSS/Cart.css">
+</head>
+
+<header>
+  <a href="Index.html"><img class="Logo" src="IMG/Logo.png"></a>
+  <li>
+    <a href="Cart.html">Cart</a>
+    <a href="Booking.html">Booking</a>
+  </li>
+</header>
+
+<body>
+
+<div class="containerIndex">
+
+  <h1 class="Titre">Votre Panier</h1>
+
+  <div id="cart-items" class="cart-items">
+    <div id="items" class="items">
+      <div class="row">
+        <h2>Paris</h2><img src="IMG/fleche.png"><h2>Lyon</h2>
+        <h2 class="date">00/00/0000</h2>
+        <h2 class="price">50</h2><h2>€</h2>
+      </div>
+    </div>
+    <button class="BtnPayer" onclick="pay()">Payer</button>
+  </div>
+
+</div>
+
+
+
+<script src="js/cart.js"></script>
+</body>
+</html>

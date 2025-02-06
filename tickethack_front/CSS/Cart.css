@@ -1,0 +1,39 @@
+.cart-items {
+    margin-top: 10vh;
+    margin-left: 25vw;
+    height: 15vh;
+    width: 50vw;
+    background-color: #0C131F;
+    color: aliceblue;
+    font-family: Arial;
+}
+
+.cart-items h2 {
+    margin-left: 1vw;
+    margin-top: 2vh;
+}
+
+.cart-items img {
+    margin-left: 1vw;
+}
+
+.date {
+    padding-left: 10vw;
+}
+
+.price {
+    padding-left: 10vw;
+}
+
+.BtnPayer {
+    margin-left: 20vw;
+    margin-top: 2vh;
+    width: 10vw;
+    cursor: pointer;
+    padding: 0.5vw;
+    background-color: #25324f;
+    color: aliceblue;
+    font-family: Arial;
+    border: none;
+    border-radius: 10px;
+}

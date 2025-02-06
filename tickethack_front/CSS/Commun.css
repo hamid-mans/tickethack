@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+}
+
+header {
+    height: 10vh;
+    width: 100%;
+    background-color: #0C131F;
+    display: flex;
+    flex-direction: row;
+}
+
+.Logo {
+    margin: 1vw;
+    width: 3.5vw;
+}
+
+header li {
+    margin-left: 75%;
+    display: flex;
+    flex-direction: row;
+}
+
+header li a {
+    margin-top: 4vh;
+    margin-bottom: 4vh;
+    margin-left: 5vw;
+    color: aliceblue;
+    font-family: "Arial";
+}
+
+header li a:hover {
+    border-bottom: 1px solid aliceblue;
+}
+
+.Titre {
+    padding-top: 5vh;
+    margin-left: 5vw;
+    font-size: 3rem;
+    font-family: Arial;
+    font-weight: bold;
+    color: aliceblue;
+}
