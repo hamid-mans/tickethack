@@ -32,7 +32,7 @@ router.post('/cart', async (req, res) => {
 		arrival: req.body.arrival,
 		dateDeparture: req.body.dateDeparture,
 		price: req.body.price,
-		isBooked: req.body.isBooked
+		isBooked: false
 	})
 
 	const newDocCart = await newCart.save()
