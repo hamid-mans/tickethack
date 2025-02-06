@@ -1,7 +1,7 @@
 .cart-items {
     margin-top: 10vh;
     margin-left: 25vw;
-    height: 15vh;
+    height: auto;
     width: 50vw;
     background-color: #0C131F;
     color: aliceblue;
@@ -13,16 +13,40 @@
     margin-top: 2vh;
 }
 
-.cart-items img {
+.arrow {
     margin-left: 1vw;
 }
 
 .date {
-    padding-left: 10vw;
+    padding-left: 5vw;
 }
 
 .price {
-    padding-left: 10vw;
+    padding-left: 5vw;
+}
+
+.date1 {
+    padding-left: 3vw;
+}
+
+.price1 {
+    padding-left: 3vw;
+}
+
+.date2 {
+    padding-left: 3vw;
+}
+
+.price2 {
+    padding-left: 3vw;
+}
+
+.delete {
+    margin-top: 1vh;
+    margin-left: 3.5vw;
+    height: 4vh;
+    width: 2vw;
+    cursor: pointer;
 }
 
 .BtnPayer {
@@ -36,4 +60,19 @@
     font-family: Arial;
     border: none;
     border-radius: 10px;
+}
+
+.BtnPayer:hover {
+    background-color: #be7535;
+}
+
+.totalpay {
+    margin-top: 3vh;
+    margin-left: 5vw;
+}
+
+.totalnumber {
+    margin-top: 3vh;
+    margin-left: 1vw;
+    font-size: 1.3rem;
 }

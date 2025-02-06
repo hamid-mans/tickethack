@@ -17,6 +17,15 @@
     height: 3vh;
     width: 15vw;
     font-family: Arial;
+    background-color: aliceblue;
+}
+
+#search-form select {
+    margin-top: 2vh;
+    height: 3vh;
+    width: 16vw;
+    font-family: Arial;
+    background-color: aliceblue;
 }
 
 #search-form input:read-write {
@@ -43,6 +52,41 @@
     margin-top: 20vh;
     margin-left: 10vw;
     height: 30vh;
-    width: 24vw;
+    width: auto;
     background-color: #0C131F;
+    font-family: Arial;
+    color: aliceblue;
+    overflow-y: scroll;
+    scrollbar-color: #1a243b #0C131F;
+}
+
+#results::-webkit-scrollbar-thumb {
+    background: #0C131F;
+}
+
+.ImgWait {
+    margin-top: 2vh;
+    margin-left: 7vw;
+    margin-right: 7vw;
+    width: 10vw;
+}
+
+#results h3 {
+    text-align: center;
+    margin-top: 2vh;
+    color: aliceblue;
+}
+
+#results h2 {
+    margin-left: 1vw;
+    margin-top: 2vh;
+}
+
+.BtnAddPanier {
+    margin-top: 1vh;
+    margin-left: 3.5vw;
+    margin-right: 1vw;
+    height: 4vh;
+    width: 2vw;
+    cursor: pointer;
 }

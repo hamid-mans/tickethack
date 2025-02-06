@@ -9,12 +9,25 @@ async function loadCart() {
 
     cart.carts.forEach(trip => {
 
-        compteur += trip.price
+		const dateConversion = new Date(trip.dateDeparture);
+		const time = dateConversion.toLocaleTimeString('fr-FR', { hour: '2-digit', minute: '2-digit' });
+
+        compteur += trip.price;
+
         cartContainer.innerHTML += `
-            <p>${trip.departure} → ${trip.arrival} (${trip.dateDeparture}) - ${trip.price}€</p>
-            <button title="${trip._id}" onclick="removeFromCart('${trip._id}')">Supprimer</button>
+            <div class="items">
+            <div class="row">
+                <h2>${trip.departure}</h2> <img class="arrow" src="IMG/fleche.png"> <h2>${trip.arrival}</h2> 
+                <h2 class="date">${time}</h2>
+                <h2 class="price">${trip.price}€</h2>
+                <img class="delete" src="IMG/delete.png" onclick="removeFromCart('${trip._id}')">
+			</div>
+                
+            </div>
         `;
     });
+
+    document.getElementById("totalprix").textContent = compteur;
 
 }
 

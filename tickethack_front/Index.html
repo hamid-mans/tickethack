@@ -4,7 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Tickethack - Recherche</title>
+    <link href="IMG/Logo.png" type="image/png" rel="icon">
+
     <link rel="stylesheet" href="CSS/Commun.css">
     <link rel="stylesheet" href="CSS/Index.css">
     <link rel="stylesheet" href="CSS/Booking.css">
@@ -27,13 +30,38 @@
 
     <div class="row">
         <form id="search-form" align="center">
-            <input type="text" id="departure" placeholder="Départ" required>
-            <input type="text" id="arrival" placeholder="Arrivée" required>
+            <select id="departure" required>
+                <option value="NULL">Veuillez séléctionner votre ville de départ</option>
+                <option value="Paris">Paris</option>
+                <option value="Marne-la-Vallée">Marne-la-Vallée</option>
+                <option value="Saint-Quentin en Yvelines">Saint-Quentin en Yvelines</option>
+                <option value="Lyon">Lyon</option>
+                <option value="Montpellier">Montpellier</option>
+                <option value="Nice">Nice</option>
+                <option value="Lille">Lille</option>
+                <option value="Bordeaux">Bordeaux</option>
+                <option value="Toulouse">Toulouse</option>
+            </select>
+            <select id="arrival" required>
+                <option value="NULL">Veuillez séléctionner votre ville d'arrivée</option>
+                <option value="Paris">Paris</option>
+                <option value="Marne-la-Vallée">Marne-la-Vallée</option>
+                <option value="Saint-Quentin en Yvelines">Saint-Quentin en Yvelines</option>
+                <option value="Lyon">Lyon</option>
+                <option value="Montpellier">Montpellier</option>
+                <option value="Nice">Nice</option>
+                <option value="Lille">Lille</option>
+                <option value="Bordeaux">Bordeaux</option>
+                <option value="Toulouse">Toulouse</option>
+            </select>
             <input type="date" id="date" required>
             <button type="submit">Rechercher</button>
         </form>
 
-        <div id="results"></div>
+        <div id="results">
+            <img class="ImgWait" src="IMG/waitting.png">
+            <h3 id="TitrePrestation"></h3>
+        </div>
     </div>
 
 
@@ -41,7 +69,7 @@
 
 
 
-<script src="js/generateTrips.js"></script>
+<script src="js/search.js"></script>
 
 </body>
 </html>

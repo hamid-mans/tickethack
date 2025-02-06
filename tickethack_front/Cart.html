@@ -5,7 +5,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>Tickethack - Panier</title>
+  <link href="IMG/Logo.png" type="image/png" rel="icon">
+
   <link rel="stylesheet" href="CSS/Commun.css">
   <link rel="stylesheet" href="CSS/Index.css">
   <link rel="stylesheet" href="CSS/Booking.css">
@@ -29,12 +32,17 @@
   <div id="cart-items" class="cart-items">
     <div id="items" class="items">
       <div class="row">
-        <h2>Paris</h2><img src="IMG/fleche.png"><h2>Lyon</h2>
+        <h2>Paris</h2><img class="arrow" src="IMG/fleche.png"><h2>Lyon</h2>
         <h2 class="date">00/00/0000</h2>
         <h2 class="price">50</h2><h2>€</h2>
+        <img class="delete" src="IMG/delete.png">
       </div>
     </div>
-    <button class="BtnPayer" onclick="pay()">Payer</button>
+    <div class="row">
+      <button class="BtnPayer" onclick="pay()">Payer</button>
+      <h3 class="totalpay">Total à payer : <h4 class="totalnumber" id="totalprix">0</h4><h4 class="totalnumber">€</h4></h3>
+    </div>
+    <br>
   </div>
 
 </div>
