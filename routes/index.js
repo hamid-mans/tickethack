@@ -80,11 +80,8 @@ router.put('/carts', async (req, res) => {
 	}
 })
 
-
-
-
 // Récupères les itineraires en fonction du formulaire de recherche
-router.get('/trips/:departure/:arrival', async (req, res) => {
+router.get('/trips/:departure/:arrival/:dateDeparture', async (req, res) => {
 
 	const data = await fs.readFile('./models/trips.json', 'utf8')
 	const trips = JSON.parse(data)
@@ -92,7 +89,7 @@ router.get('/trips/:departure/:arrival', async (req, res) => {
 	const validTrips = []
 
 	trips.forEach(trip => {
-		if(trip.departure === req.params.departure && trip.arrival === req.params.arrival) {
+		if(trip.departure === req.params.departure && trip.arrival === req.params.arrival && trip.date.$date.startsWith(req.params.dateDeparture)) {
 			validTrips.push({
 				departure: trip.departure,
 				arrival: trip.arrival,
