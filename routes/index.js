@@ -41,7 +41,7 @@ router.post('/cart', async (req, res) => {
 })
 
 router.get('/', async (req, res) => {
-	res.render('tickethack_front/Index.html')
+	res.render('tickethack_front/Index')
 })
 
 // Supprimer un voyage au panier
