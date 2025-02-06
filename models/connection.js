@@ -5,6 +5,6 @@ const bddString = "mongodb+srv://" + process.env.DB_USER + ":" + process.env.DB_
 
 mongoose.connect(bddString, { timeoutMS: 2000 })
 	.then(() => {
-		console.log("BDD connectée !")
+		console.log("La base de donnée est connectée !")
 	})
 	.catch(e => console.error("Erreur : " + e))
