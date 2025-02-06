@@ -4,7 +4,7 @@ const moment = require('moment');
 const momentRandom = require('moment-random');
 const fs = require('fs');
 
-const NB_TRIPS = 400;
+const NB_TRIPS = 4000;
 const CITIES = ['Paris', 'Marne-la-Vallée', 'Saint-Quentin en Yvelines', 'Lyon', 'Montpellier', 'Nice', 'Lille', 'Bordeaux', 'Toulouse'];
 const MIN_PRICE = 25;
 const MAX_PRICE = 200;
