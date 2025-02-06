@@ -5,7 +5,7 @@ document.querySelector("#search-form").addEventListener("submit", async (event) 
     const arrival = document.querySelector("#arrival").value;
     const date = document.querySelector("#date").value;
 
-    const response = await fetch(`https://tickethack-gold.vercel.app/trips/${departure}/${arrival}/${date}`);
+    const response = await fetch(`http://localhost:3000/trips/${departure}/${arrival}/${date}`);
     const trips = await response.json();
 
     const resultsContainer = document.querySelector("#results");
@@ -44,7 +44,7 @@ document.querySelector("#search-form").addEventListener("submit", async (event) 
 });
 
 async function addToCart(departure, arrival, dateDeparture, price) {
-    await fetch("https://tickethack-gold.vercel.app/cart", {
+    await fetch("http://localhost:3000/cart", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ departure, arrival, dateDeparture, price })
