@@ -1,5 +1,5 @@
 async function loadCart() {
-    const response = await fetch("http://localhost:3000/carts");
+    const response = await fetch("https://tickethack-gold.vercel.app/carts");
     const cart = await response.json();
 
     const cartContainer = document.querySelector("#items");
@@ -32,12 +32,12 @@ async function loadCart() {
 }
 
 async function removeFromCart(id) {
-    await fetch(`http://localhost:3000/cart/${id}`, { method: "DELETE" });
+    await fetch(`https://tickethack-gold.vercel.app/cart/${id}`, { method: "DELETE" });
     loadCart();
 }
 
 async function pay() {
-    await fetch("http://localhost:3000/carts", { method: "PUT" });
+    await fetch("https://tickethack-gold.vercel.app/carts", { method: "PUT" });
     alert("Paiement réussi !");
     window.location.href = "Booking.html";
 }

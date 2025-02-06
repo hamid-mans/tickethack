@@ -1,5 +1,5 @@
 async function loadCart() {
-	const response = await fetch("http://localhost:3000/bookings");
+	const response = await fetch("https://tickethack-gold.vercel.app/bookings");
 	const cart = await response.json();
 
 	const cartContainer = document.querySelector("#items");
