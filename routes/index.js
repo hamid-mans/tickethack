@@ -40,6 +40,10 @@ router.post('/cart', async (req, res) => {
 	res.json(newDocCart)
 })
 
+router.get('/', async (req, res) => {
+	res.json({'test': 1})
+})
+
 // Supprimer un voyage au panier
 router.delete('/cart/:id', async (req, res) => {
 
